@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.heading {
+   background-color: cornflowerblue;
+   padding: 20px;
+   width: 95%;
+   margin: auto;
+   border-radius: 20px;
+}
+
+.heading h1{
+   color: white;
+   text-align: center;
+}
+
+main {
+    background-color: rgb(188, 187, 187);
+    border-radius: 20px;
+}
+
+.container{
+    border: 1px solid black;
+    margin: 2.5%;
+    padding: 25px;
+}
+
+.container-section {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.container-top{
+    margin-bottom: 2rem;
+}
+
+.container-top p {
+    font-size: 25px;
+}
+
+.item-input{
+    width: 400px;
+    height: 30px;
+    margin-top: 0.5%;
+    border: 2px solid gray;
+    outline: none;
+    border: none;
+}
+
+input.item-input:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.container-sub-btn{
+    font-size: 15px;
+    margin-left: 0.5%;
+    width: 80px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 0px;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.container-sub-btn:hover {
+    background-color: rgb(33, 101, 227);
+}
+
+.list-items {
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 20px;
+}
+
+.item {     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0.2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+ 
+.delete-btn {
+    width: 30px;
+    height: 32px;
+    color: white;
+    background: rgb(228, 9, 9);
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: red;
+}
+
+ /* To make the list items unselectable, since I want to make a line through each item when clicked*/
+ul li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* When clicked make a line throught the list item */
+ul li.checked {
+    text-decoration: line-through;
+}
+
+
+ /* Media queries */
+ @media only screen and (max-width: 480px) and (min-width: 320px) {
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container{
+        border: 1px solid black;
+        margin: 2.5%;
+        padding: 10px;
+    }
+
+    .heading h1{
+       color: white;
+       font-size: 20px;
+    }
+
+
+    .container-top{
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    .item-input{
+        width: 220px;
+    }
+    .container-top{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container{
+        border: 1px solid black;
+        margin: 2.5%;
+        padding: 10px;
+    }
+
+    .heading h1{
+       color: white;
+       font-size: 20px;
+    }
+
+    .container-top{
+        margin-bottom: 2%;
+    }
+
+    .container-top p {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .container-top p {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (width: 280px) {
+    .item-input {
+        width: 120px;
+    }
+}
+
