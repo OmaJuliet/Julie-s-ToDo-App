@@ -53,7 +53,7 @@ list.addEventListener('click', function(ev) {
 //To delete the list items and confirm.
  function removeItem(e){
     if(e.target.classList.contains('delete-btn')){
-    if (confirm("Are You Sure you want to delete this item?")){
+    if (confirm("Are you sure you want to delete this item?")){
         var li = e.target.parentElement;
         listItems.removeChild(li);
     }
